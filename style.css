@@ -1,0 +1,391 @@
+
+
+body{
+    font-family: "Arial";
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    background: rgb(58, 57, 57);
+	color: white;
+}
+
+header .logo_caixa{
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+
+
+.img_header {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{ 
+    background: black;
+
+
+    flex-direction: column;
+     width: 45%; 
+     /* background: rgba(2, 185, 221, 0.918); */
+
+}
+
+
+
+
+
+:root {
+	--bgcolor: black;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	text-decoration: none;
+	color: white;
+}
+
+body {
+	min-height: 100vh;
+	display: grid;
+	/* place-items: center; */
+	/* background: var(--bgcolor); */
+	color: white;
+	font-family: "Arial" ;
+	
+}
+ul {
+	list-style: none;
+}
+h3 {
+	font-size: 2rem;
+	position: relative;
+	text-transform: uppercase;
+	transition: all 300ms ease;
+	width: fit-content;
+	cursor: pointer;
+    margin: 20px;
+}
+h3:hover {
+	transform: skew(5deg);
+}
+h3::before {
+	content: attr(data-name);
+	position: absolute;
+	top: 0;
+	left: -20px;
+	background: var(--bgcolor);
+	height: 1.5rem;
+	overflow: hidden;
+	transition: all 300ms ease;
+	padding-left: 20px;
+    /* margin: 10px; */
+}
+h3:hover::before {
+	top: -3px;
+	left: -9px;
+	color: rgba(2, 185, 221, 0.918);
+}
+
+h3::after {
+	content: "";
+	height: 2px;
+	width: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(2, 185, 221, 0.918);
+	transition: all 300ms ease;
+}
+h3:hover::after {
+	width: 120%;
+	outline: 3px solid black;
+}
+
+#nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+
+
+/* h1 {
+    font-size: 20px;
+} */
+
+/* //////////////////////////// */
+
+/* ----------------banner ------------------ */
+
+.fundo{
+    width: 100%;
+    height: 800px;
+    background-image: url(./fundobyblock.jpg);
+    background-size: cover ;
+    object-fit: cover;
+
+
+}
+
+/* ---------------- SOBRE ------------------ */
+
+.titulo-sobre{
+	font: bold;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	padding-top: 60px;
+	display: flex;
+	padding-bottom: 30px;
+
+}
+
+.sobre{
+	text-align: center;
+	font-size: 20px;
+
+}
+
+.logo_jordan{
+	width: 15%;
+	padding-top: 20px;
+	padding-left: 42%;
+}
+
+
+ .mapa{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+	margin-bottom: 50px;
+ }
+
+ .video{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
+ }
+
+
+
+/* ----------------FOOTER------------------ */
+
+footer{
+    text-align: center;
+    margin: 0 auto ;
+    background-color: black;
+    padding: 40 0 30 0;
+	width: 100%;
+}
+
+.copyright{
+    color: #FFFFBB;
+    font-size: 12;
+    margin-top: 20;
+}
+
+.logo_footer{
+	width: 10%;
+}
+
+
+
+/* ----------------FOOTER------------------ */
+
+
+.titulo-marcas{
+	font: bold;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	padding-top: 60px;
+	display: flex;
+	padding-bottom: 150px;
+
+}
+
+.copyright{
+	color: white;
+
+}
+
+
+
+/* ----------------TELA MARCAS ---------------------------------------------------------------------------- */
+
+
+/* Estilos para a lista de marcas */
+.marcas {
+    text-align: center;
+}
+
+.marca-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se não houver espaço suficiente */
+}
+
+/* Estilos para cada item da marca */
+.marca-item {
+    box-sizing: border-box;
+    margin-right: 20px;
+    margin-bottom: 20px; /* Adiciona um espaçamento inferior entre os itens */
+    text-align: center;
+    transition: border-color 0.3s; /* Adiciona uma transição suave para a cor da borda */
+    width: 30%;
+    border: 2px solid white;
+}
+
+.marca-item:hover {
+	border-color: rgb(77, 230, 222); /* Altera a cor da borda quando o mouse está sobre o item */
+  }
+
+/* Estilos para as imagens dentro dos itens da marca */
+.marca-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+   
+    
+}
+
+/* Estilos para o logotipo TNF */
+.logo-tnf {
+    text-align: center;
+}
+
+.logotnf {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para o título das marcas */
+.titulo-marcas {
+    text-align: center;
+}
+
+/* Layout responsivo */
+@media (max-width: 600px) {
+    .marca-item {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+
+
+/* ----------------TELA CADASTRO ---------------------------------------------------------------------------- */
+
+
+.titulo-cadastro{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+	
+  }
+
+  .textos {
+    text-align: center;
+    display: inline-table;
+    margin-right: 20px;
+    padding: 20px;
+    border: 2px solid white;
+    text-align: center;
+    transition: border-color 0.3s;
+	
+   
+}
+
+.textos label,
+.textos input, .textos button {
+    display: block;
+    margin: 10px auto;
+    color: black;
+    font: bold;
+    font-size: 14;
+}
+
+.cadastro{
+    
+    padding-bottom: 100px;
+    text-align: center;
+   
+}
+
+
+
+/* ----------------TELA CONTATO ---------------------------------------------------------------------------- */
+
+form{
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-bottom: 20px;
+}
+form label, form legend, .Esqueceu{
+    display: block;
+    font-size: 15px;
+    margin: 0 0 10px;
+}
+fieldset{
+    width: 75%;
+    padding-left: 5%;
+    margin-bottom: 2%;
+}
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 85%;
+}
+.chk{
+    margin: 20px 0;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background:  rgb(77, 230, 222);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    
+}
+.enviar:houver{
+    background: darkorange;
+    transform: scale(1,2);
+}
+
+
+.grafico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+  }
+  
+  .grafico img {
+    max-width: 60%; /* Garante que a imagem não ultrapasse a largura da div */
+    max-height: 60%; /* Garante que a imagem não ultrapasse a altura da div */
+  }
